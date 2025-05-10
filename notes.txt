@@ -1,0 +1,30 @@
+rag_chatbot/
+│── data/                        # 📂 Store all raw and processed PDFs
+│   ├── harry_potter_1.pdf
+│   ├── harry_potter_2.pdf
+│   ├── ...
+│
+│── embeddings/                  # 📂 Store embedding-related files
+│   ├── embeddings_store.json    # Serialized embeddings (optional, if needed)
+│
+│── models/                      # 📂 Store or define models
+│   ├── embedding_model.py       # Script for loading & using the embedding model
+│   ├── llm_model.py             # Script for loading the local LLM
+│
+│── vector_db/                   # 📂 Vector database management (Qdrant)
+│   ├── qdrant_setup.py          # Qdrant setup & connection
+│
+│── index/                       # 📂 LlamaIndex setup and management
+│   ├── index_builder.py         # Code for building LlamaIndex index
+│   ├── index_query.py           # Code for querying the index
+│
+│── chatbot/                     # 📂 Main chatbot logic
+│   ├── chatbot.py               # Main script to run the chatbot
+│
+│── utils/                       # 📂 Utility functions
+│   ├── pdf_loader.py            # Function to load and extract text from PDFs
+│   ├── text_preprocessing.py    # Functions for cleaning and chunking text
+│
+│── config.py                    # 🔧 Configuration file (API keys, model paths, etc.)
+│── requirements.txt             # 📜 Python dependencies
+│── README.md                    # 📄 Documentation for the project
